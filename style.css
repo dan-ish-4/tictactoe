@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@1,100&family=Grape+Nuts&family=Inconsolata:wght@300&family=Square+Peg&family=The+Nautigal:wght@700&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    text-decoration: none;
+    margin-left: 12px;
+    font-family: 'Square Peg', cursive;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav {
+    background-color: cornflowerblue;
+    color: white;
+    height: 26px;
+}
+
+.gamecontainer {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+button {
+    padding: 7px 12px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color:rgb(157, 167, 186);
+    color: black;
+    transform: rotate(10deg);
+    /* transform: skew(10deg 10deg); */
+    transition: transform 0.3s ease-in;
+    
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 129px 129px 129px;
+    grid-template-rows: 127px 127px 127px;
+    /* grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 8vw); */
+    padding: 14px;
+    position: relative;
+
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 70px;
+    text-align: center;
+}
+
+.box:hover {
+    background-color:rgb(157, 167, 186);
+    cursor: pointer;
+}
+.boxtext{
+    font-family: 'Square Peg', cursive;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.gameinfo {
+    margin: 12px 13px;
+}
+
+img {
+    width: 0;
+    transition: width 1s ease-in;
+}
+
+.info {
+    margin: 5px;
+
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+h1{
+    font-family: 'Inconsolata', monospace;
+}
+.infoContainer{
+    margin-top: 17px;
+}
+.imgbox{
+    margin: 16px 55px
+}
+
+.line{
+    background-color: rgb(167, 131, 167);
+    /* width: 375px; */
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 73px;
+    left: 22px;
+    transform: translate(10vw ,20vw) rotate(90deg);
+    transition: width 1s ease-in-out;
+    border-radius: 24px;
+
+}
+
+@media screen and (max-width: 755px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width:481px) {
+    .container{
+        grid-template-columns: 100px 100px 100px;
+    }
+    
+}
+@media screen and (max-width:281px) {
+    .container{
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 60px 60px 60px;
+    }
+    .box{
+        font-size: 3rem;
+    }
+    
+}
+@media screen and (max-width:372px) {
+    .container{
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 60px 60px 60px;
+    }
+    .box{
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:1400px) {
+    .line{
+        display: none;
+    }
+    
+}
